@@ -1,0 +1,81 @@
+﻿/* 全体 */
+body {
+	font-family: 'Hiragino Kaku Gothic ProN', sans-serif;
+	margin: 0;
+	background-color: #fffafc;
+	color: #333;
+	text-align: center;
+}
+
+/* タイトルバー */
+h1 {
+	margin: 0;
+	padding: 20px;
+	background-color: #a3c8ff;
+	color: white;
+	font-size: 24px;
+	letter-spacing: 2px;
+}
+
+/* セレクトボックス */
+label, select {
+	font-size: 16px;
+	margin: 20px;
+	padding: 8px;
+}
+
+.search-container {
+	text-align: left;
+	max-width: 960px;
+	margin: 20px auto 0 auto;
+	padding-left: 20px;
+}
+
+/* 商品一覧のグリッド */
+#product-container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 24px;
+	padding: 20px;
+	max-width: 960px;
+	margin: 0 auto; /* ✅ 全体は中央揃え */
+	justify-content: flex-start; /* ✅ 中の要素は左詰め */
+}
+
+/* 商品カード */
+.product-card {
+	width: calc((100% - 48px) / 3); /* ← 3列に分ける（gap × 2 = 48px） */
+	box-sizing: border-box;
+	background-color: #e3f0ff;
+	border-radius: 16px;
+	padding: 12px;
+	box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+	transition: 0.3s;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.product-card:hover {
+	transform: scale(1.02);
+}
+
+	.product-card img {
+		width: 100%;
+		max-height: 160px;
+		object-fit: contain;
+		border-radius: 12px;
+		background-color: white;
+	}
+
+	.product-card h3 {
+		margin: 10px 0 6px;
+		font-size: 14px;
+		line-height: 1.4;
+	}
+
+	.product-card a {
+		font-size: 13px;
+		color: #558bcb;
+		text-decoration: none;
+	}

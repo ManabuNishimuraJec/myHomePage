@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>パーソナルカラー別コスメ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>おすすめコスメ</h1>
+    <div class="search-container">
+        <label for="colorSelect">パーソナルカラーを選択：</label>
+        <select id="colorSelect">
+            <option value="spring">スプリング</option>
+            <option value="summer">サマー</option>
+            <option value="autumn">オータム</option>
+            <option value="winter">ウィンター</option>
+        </select>
+
+        <label for="typeSelect">カテゴリを選択：</label>
+        <select id="typeSelect">
+            <option value="all">すべて</option>
+            <option value="lip">リップ</option>
+            <option value="eyeshadow">アイシャドウ</option>
+            <option value="cheek">チーク</option>
+        </select>
+    </div>
+
+    <div id="product-container"></div>
+    <!-- 外部JSファイルをモジュールとして読み込む -->
+    <script type="module" src="./script.js"></script>
+</body>
+</html>
